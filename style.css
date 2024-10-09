@@ -1,0 +1,100 @@
+/* bellefair-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/bellefair-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-condensed-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/barlow-condensed-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-blue-900: hsl(230, 35%, 7%);
+  --color-blue-300: hsl(231, 77%, 90%);
+  --color-white: hsl(0, 0, 100%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center -135px;
+  background-size: 100% 950px;
+  min-height: 812px;
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: var(--color-blue-300);
+  text-align: center;
+  line-height: 1.8;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 88px;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 6.4%;
+}
+
+.title {
+  font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 19px;
+}
+
+h1 {
+  font-family: "Bellefair", Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  line-height: 92px;
+  margin-block: 24px;
+}
+
+main {
+  padding: 6.4%;
+}
+
+.container__button {
+  width: 100%;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 144px;
+  height: 144px;
+  font-family: "Bellefair", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: white;
+  color: var(--color-blue-900);
+  border: none;
+  border-radius: 50%;
+  text-transform: uppercase;
+}
