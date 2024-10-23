@@ -41,7 +41,7 @@ body {
   background-size: 100% 950px;
   min-height: 812px;
   font-family: "Barlow", Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--color-blue-300);
   text-align: center;
   line-height: 1.8;
@@ -56,9 +56,15 @@ header {
   padding-inline: 6.4%;
 }
 
+.nav__list {
+  visibility: hidden;
+  font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
 .title {
   font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 19px;
@@ -66,7 +72,7 @@ header {
 
 h1 {
   font-family: "Bellefair", Arial, Helvetica, sans-serif;
-  font-size: 80px;
+  font-size: 5rem;
   font-weight: 400;
   color: white;
   text-transform: uppercase;
@@ -91,10 +97,44 @@ main {
   width: 144px;
   height: 144px;
   font-family: "Bellefair", Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   background-color: white;
   color: var(--color-blue-900);
   border: none;
   border-radius: 50%;
   text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+
+/* TABLET STYLES - 768PX */
+
+@media (width >= 48em) {
+  header {
+    height: 96px;
+  }
+
+  header .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  header .hamburger {
+    visibility: hidden;
+  }
+
+  .nav__list {
+    display: flex;
+    visibility: visible;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    list-style: none;
+    padding: 0;
+    gap: 48px;
+  }
+
+  .nav__list li {
+  }
 }
